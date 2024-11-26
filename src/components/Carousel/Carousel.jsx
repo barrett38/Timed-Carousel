@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.css"; // Import the CSS file for custom styles
+import "./Carousel.css";
+// import { CustomPrevArrow, CustomNextArrow } from "./CarouselArrows";
 
 // React component for rendering individual cards
 const Card = ({ title, content, image }) => {
@@ -24,11 +25,13 @@ const Carousel = ({ cardData }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows: true,
+    arrows: false, // Disable default arrows
     centerMode: true,
-    centerPadding: "0px", // Ensure no padding
+    centerPadding: "0px",
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed to 3 seconds
+    autoplaySpeed: 3000,
+    // prevArrow: <CustomPrevArrow />,
+    // nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,9 +41,12 @@ const Carousel = ({ cardData }) => {
           infinite: true,
           dots: true,
           centerMode: true,
-          centerPadding: "0px", // Ensure no padding
-          autoplay: true, // Enable autoplay
-          autoplaySpeed: 6000, // Set autoplay speed > 1000 is 1 second
+          centerPadding: "0px",
+          autoplay: true,
+          autoplaySpeed: 6000,
+          arrows: false, // Default Arrows
+          // prevArrow: <CustomPrevArrow />,
+          // nextArrow: <CustomNextArrow />,
         },
       },
       {
@@ -49,9 +55,12 @@ const Carousel = ({ cardData }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "0px", // Ensure no padding
-          autoplay: true, // Enable autoplay
-          autoplaySpeed: 6000, // Set autoplay speed to 3 seconds
+          centerPadding: "0px",
+          autoplay: true,
+          autoplaySpeed: 6000,
+          arrows: false, // Disable default arrows for this breakpoint
+          // prevArrow: <CustomPrevArrow />,
+          // nextArrow: <CustomNextArrow />,
         },
       },
     ],
