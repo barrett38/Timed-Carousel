@@ -5,14 +5,18 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(218, 56, 56, 0.1);
   background-color: var(--earthy-brown);
-  border: 1px solid #ddd;
+  border: 1px solid var(--earthy-black);
   border-radius: 8px;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Add transition for border color */
   background-size: cover;
   background-position: center;
   color: white;
   position: relative;
+}
+
+.card:hover {
+  border-color: white; /* Change border color to white on hover */
 }
 
 @media (max-width: 600px) {
@@ -22,14 +26,18 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(218, 56, 56, 0.1);
     background-color: var(--earthy-brown);
-    border: 1px solid #ddd;
+    border: 1px solid var(--earthy-black);
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Add transition for border color */
     background-size: cover;
     background-position: center;
     color: white;
     position: relative;
+  }
+
+  .card:hover {
+    border-color: white; /* Change border color to white on hover */
   }
 }
 
@@ -121,6 +129,8 @@
   z-index: 2;
 }
 
+/* Fading right and left of the cards below */
+/* 
 .carousel-container::before {
   left: 0;
   background: linear-gradient(
@@ -137,4 +147,5 @@
     var(--earthy-cream),
     rgba(255, 255, 255, 0)
   );
-}
+} 
+*/
