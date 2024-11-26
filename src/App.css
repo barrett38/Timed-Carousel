@@ -1,3 +1,11 @@
+:root {
+  --earthy-black: #050507;
+  --earthy-green: #226160;
+  --earthy-brown: #a95f4a;
+  --earthy-yellow: #d0a462;
+  --earthy-cream: #fdf6ca;
+}
+
 .App {
   text-align: center;
   padding: 20px;

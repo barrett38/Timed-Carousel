@@ -1,3 +1,11 @@
+:root {
+  --earthy-black: #050507;
+  --earthy-green: #226160;
+  --earthy-brown: #a95f4a;
+  --earthy-yellow: #d0a462;
+  --earthy-cream: #fdf6ca;
+}
+
 .card {
   background-color: #f5f5f5;
   border: 1px solid #ddd;
@@ -42,7 +50,7 @@
   position: relative;
   max-width: 600px; /* Adjust the max-width as needed */
   margin: 0 auto;
-  overflow: hidden; /* Ensure the gradient effect is visible */
+  /* overflow: hidden;  */
 }
 
 .carousel-slide {
