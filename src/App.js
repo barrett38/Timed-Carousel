@@ -6,7 +6,7 @@ import cardData from "./components/Carousel/CardData";
 function App() {
   return (
     <div className="App">
-      <h2>Carousel of Random Cards</h2>
+      <h2>Comapny Name</h2>
       <Carousel cardData={cardData} />
     </div>
   );
