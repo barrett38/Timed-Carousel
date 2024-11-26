@@ -5,11 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css"; // Import the CSS file for custom styles
 
 // React component for rendering individual cards
-const Card = ({ title, content }) => {
+const Card = ({ title, content, image }) => {
   return (
-    <div className="card">
-      <h3>{title}</h3>
-      <p>{content}</p>
+    <div className="card" style={{ backgroundImage: `url(${image})` }}>
+      <div className="card-content">
+        <h3>{title}</h3>
+        <p>{content}</p>
+      </div>
     </div>
   );
 };
@@ -60,7 +62,11 @@ const Carousel = ({ cardData }) => {
       <Slider {...settings}>
         {cardData.map((card) => (
           <div key={card.id} className="carousel-slide">
-            <Card title={card.title} content={card.content} />
+            <Card
+              title={card.title}
+              content={card.content}
+              image={card.image}
+            />
           </div>
         ))}
       </Slider>
