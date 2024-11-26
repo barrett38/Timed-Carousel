@@ -21,10 +21,10 @@ const Carousel = ({ cardData }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    initialSlide: 0, // Center the first card on load
+    initialSlide: 0,
     arrows: true,
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: "0px", // Ensure no padding
     responsive: [
       {
         breakpoint: 1024,
@@ -34,7 +34,7 @@ const Carousel = ({ cardData }) => {
           infinite: true,
           dots: true,
           centerMode: true,
-          centerPadding: "0px",
+          centerPadding: "0px", // Ensure no padding
         },
       },
       {
@@ -43,7 +43,7 @@ const Carousel = ({ cardData }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "0px",
+          centerPadding: "0px", // Ensure no padding
         },
       },
     ],
