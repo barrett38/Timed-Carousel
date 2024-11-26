@@ -1,8 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
 import "./App.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Carousel from "./components/Carousel/Carousel";
 
 // Sample data for random content
 const cardData = [
@@ -15,53 +13,11 @@ const cardData = [
   { id: 7, title: "Card 7", content: "This is the content of Card 7." },
 ];
 
-// React component for rendering individual cards
-const Card = ({ title, content }) => {
-  return (
-    <div className="card">
-      <h3>{title}</h3>
-      <p>{content}</p>
-    </div>
-  );
-};
-
 function App() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   return (
     <div className="App">
       <h2>Carousel of Random Cards</h2>
-      <Slider {...settings}>
-        {cardData.map((card) => (
-          <div key={card.id}>
-            <Card title={card.title} content={card.content} />
-          </div>
-        ))}
-      </Slider>
+      <Carousel cardData={cardData} />
     </div>
   );
 }
