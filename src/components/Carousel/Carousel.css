@@ -18,12 +18,11 @@
   color: #555;
 }
 
-/* Default padding for all views */
+/* SPACING Between the cards */
 .slick-slide {
   padding: 1px;
 }
 
-/* Media query for mobile views */
 @media (max-width: 600px) {
   .slick-slide {
     padding: 0px;

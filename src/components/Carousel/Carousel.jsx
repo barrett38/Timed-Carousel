@@ -25,6 +25,8 @@ const Carousel = ({ cardData }) => {
     arrows: true,
     centerMode: true,
     centerPadding: "0px", // Ensure no padding
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Set autoplay speed to 3 seconds
     responsive: [
       {
         breakpoint: 1024,
@@ -35,6 +37,8 @@ const Carousel = ({ cardData }) => {
           dots: true,
           centerMode: true,
           centerPadding: "0px", // Ensure no padding
+          autoplay: true, // Enable autoplay
+          autoplaySpeed: 6000, // Set autoplay speed > 1000 is 1 second
         },
       },
       {
@@ -44,6 +48,8 @@ const Carousel = ({ cardData }) => {
           slidesToScroll: 1,
           centerMode: true,
           centerPadding: "0px", // Ensure no padding
+          autoplay: true, // Enable autoplay
+          autoplaySpeed: 6000, // Set autoplay speed to 3 seconds
         },
       },
     ],
