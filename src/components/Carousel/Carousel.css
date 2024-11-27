@@ -14,6 +14,20 @@ p {
   color: white;
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-details {
+  animation: fadeIn 0.5s ease-in-out; /* Adjust the duration and easing as needed */
+}
+
 /* Main CARD Settings */
 .card {
   width: 80%;
