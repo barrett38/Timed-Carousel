@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
-// import { CustomPrevArrow, CustomNextArrow } from "./CarouselArrows";
+import CardDetails from "./CardDetails";
 
 // React component for rendering individual cards
-const Card = ({ title, content, image }) => {
+const Card = ({ title, content, image, onClick }) => {
   return (
-    <div className="card" style={{ backgroundImage: `url(${image})` }}>
+    <div
+      className="card"
+      style={{ backgroundImage: `url(${image})` }}
+      onClick={onClick}
+    >
       <div className="card-content">
         <h3>{title}</h3>
         <p>{content}</p>
@@ -18,6 +22,8 @@ const Card = ({ title, content, image }) => {
 };
 
 const Carousel = ({ cardData }) => {
+  const [selectedCardId, setSelectedCardId] = useState(null);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -30,8 +36,6 @@ const Carousel = ({ cardData }) => {
     centerPadding: "0px",
     autoplay: true, // Enable autoplay
     autoplaySpeed: 3000,
-    // prevArrow: <CustomPrevArrow />,
-    // nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -44,9 +48,7 @@ const Carousel = ({ cardData }) => {
           centerPadding: "0px",
           autoplay: true,
           autoplaySpeed: 6000,
-          arrows: false, // Default Arrows
-          // prevArrow: <CustomPrevArrow />,
-          // nextArrow: <CustomNextArrow />,
+          arrows: false, // Disable default arrows for this breakpoint
         },
       },
       {
@@ -59,8 +61,6 @@ const Carousel = ({ cardData }) => {
           autoplay: true,
           autoplaySpeed: 6000,
           arrows: false, // Disable default arrows for this breakpoint
-          // prevArrow: <CustomPrevArrow />,
-          // nextArrow: <CustomNextArrow />,
         },
       },
     ],
@@ -75,10 +75,12 @@ const Carousel = ({ cardData }) => {
               title={card.title}
               content={card.content}
               image={card.image}
+              onClick={() => setSelectedCardId(card.id)}
             />
           </div>
         ))}
       </Slider>
+      {selectedCardId && <CardDetails selectedCardId={selectedCardId} />}
     </div>
   );
 };
