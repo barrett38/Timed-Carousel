@@ -12,7 +12,7 @@ body {
   padding: 0;
   height: 100vh;
   background-color: var(--earthy-cream);
-  background-image: url("../public/assets/darkBlueBackground.JPG");
+  background-image: url("../public/images/darkbluebackground.JPG");
   background-size: cover; /* Ensure the background image covers the entire viewport */
   background-position: center; /* Center the background image */
 }
