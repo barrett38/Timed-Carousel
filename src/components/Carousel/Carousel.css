@@ -67,7 +67,7 @@ p {
     height: 100px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(218, 56, 56, 0.1);
-    background-color: var(--earthy-brown);
+    background-color: var(--card-background);
     border: 1px solid var(--earthy-black);
     border-radius: 8px;
     text-align: center;

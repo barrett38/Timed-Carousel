@@ -5,6 +5,7 @@
   --earthy-brown: #a95f4a;
   --earthy-yellow: #d0a462;
   --earthy-cream: #fdf6ca;
+  --card-background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
 body {
