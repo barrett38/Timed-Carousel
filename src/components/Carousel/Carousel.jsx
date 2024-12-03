@@ -6,13 +6,9 @@ import "./Carousel.css";
 import CardDetails from "./CardDetails";
 
 // React component for rendering individual cards
-const Card = ({ title, content, image, onClick }) => {
+const Card = ({ title, content, background, onClick }) => {
   return (
-    <div
-      className="card"
-      style={{ backgroundImage: `url(${image})` }}
-      onClick={onClick}
-    >
+    <div className="card" style={{ background }} onClick={onClick}>
       <div className="card-content">
         <h3>{title}</h3>
         <p>{content}</p>
