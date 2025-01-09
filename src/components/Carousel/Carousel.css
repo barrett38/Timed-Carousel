@@ -54,7 +54,7 @@ p {
   transition: transform 0.3s ease, border-color 0.3s ease;
   color: white;
   position: relative;
-  background: var(--card-background); /* Use CSS variable for background */
+  background: var(--card-background);
 }
 
 .card:hover {

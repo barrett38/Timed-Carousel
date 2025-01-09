@@ -14,15 +14,14 @@ body {
   height: 100vh;
   background-color: var(--earthy-cream);
   background-image: url("../public/images/darkbluebackground.JPG");
-  background-size: cover; /* Ensure the background image covers the entire viewport */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center;
 }
 
 .App {
-  /* background-color: var(--earthy-cream); */
   text-align: center;
   padding: 20px;
-  min-height: 100vh; /* Ensure .App covers the entire viewport height */
+  min-height: 100vh;
 }
 
 h2 {
