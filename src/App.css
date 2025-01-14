@@ -13,8 +13,8 @@ body {
   padding: 0;
   height: 100vh;
   background-color: var(--earthy-cream);
-  /* background-image: url("../public/images/darkbluebackground.JPG"); */
-  background-image: url("./images/darkbluebackground.JPG");
+  /* background-image: url("../public/images/darkbluebackground.jpg"); */
+  background-image: url("./images/darkbluebackground.jpg");
   background-size: cover;
   background-position: center;
 }
