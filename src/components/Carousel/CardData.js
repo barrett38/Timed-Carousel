@@ -41,17 +41,9 @@ const cardData = [
   },
   {
     id: 6,
-    title: "The Hanging Gardens of Babylon",
+    title: "The Statue of Zeus at Olympia",
     content: "Click here for content of card 6.",
     image: "/images/image6.jpg", // Path to the image
-    longform:
-      "The Hanging Gardens, said to be built by King Nebuchadnezzar II around 600 BC, were a legendary terraced garden filled with lush vegetation. According to ancient writers, the gardens were created to please the king’s wife, Amytis, who missed the greenery of her homeland. The gardens were reportedly irrigated by an advanced system using the nearby Euphrates River. However, the existence of the Hanging Gardens remains uncertain, as no definitive archaeological evidence has been found.",
-  },
-  {
-    id: 7,
-    title: "The Statue of Zeus at Olympia",
-    content: "Click here for content of card 7.",
-    image: "/images/image7.jpg", // Path to the image
     longform:
       "Created by the sculptor Phidias around 435 BC, this massive statue of Zeus stood over 12 meters (40 feet) tall and was located in the Temple of Zeus in Olympia. The figure was made of ivory and gold, seated on a grand throne, holding a scepter and a statue of Nike, the goddess of victory. This masterpiece represented the majesty and power of the Greek gods, but it was later destroyed, likely in a fire, during the 5th century AD.",
   },
