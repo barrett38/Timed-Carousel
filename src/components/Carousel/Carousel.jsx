@@ -31,10 +31,10 @@ const Carousel = ({ cardData }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows: false, // Disable default arrows
+    arrows: false,
     centerMode: true,
     centerPadding: "0px",
-    autoplay: true, // Enable autoplay
+    autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -48,7 +48,7 @@ const Carousel = ({ cardData }) => {
           centerPadding: "0px",
           autoplay: true,
           autoplaySpeed: 6000,
-          arrows: false, // Disable default arrows for this breakpoint
+          arrows: false,
         },
       },
       {
@@ -60,7 +60,7 @@ const Carousel = ({ cardData }) => {
           centerPadding: "0px",
           autoplay: true,
           autoplaySpeed: 6000,
-          arrows: false, // Disable default arrows for this breakpoint
+          arrows: false,
         },
       },
     ],
@@ -86,3 +86,4 @@ const Carousel = ({ cardData }) => {
 };
 
 export default Carousel;
+// @rememberme
